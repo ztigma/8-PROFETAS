@@ -48,7 +48,7 @@ Object.prototype.ID = function()
 {
 	return pnow++;
 }
-class Vista
+class View
 {
     constructor(tag)
     {
