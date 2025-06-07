@@ -113,7 +113,7 @@
 	{
   		resize: none;
 	}
-	[_view]
+	body>*:not(script)
 	{
 		z-index: var(--z_index_phone);
 		
@@ -184,7 +184,6 @@
 	}
 	html, body, [id='root']
 	{
-		width: 100vw;
 		margin: 0%;
 	}
 	[contenteditable="true"]
