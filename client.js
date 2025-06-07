@@ -102,7 +102,7 @@ class View
         return w;
     }
 }
-class Botonsito extends Vista
+class Botonsito extends View
 {
     constructor(tag = "button")
     {
