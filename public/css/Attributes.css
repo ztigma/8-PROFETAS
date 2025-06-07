@@ -139,7 +139,7 @@
 	{
   		resize: none;
 	}
-	*:not(script)
+	body>*:not(script)
 	{
 		visibility: visible;
 		z-index: var(--z_index);
@@ -211,7 +211,6 @@
 	}
 	html, body, [id='root']
 	{
-		width: 100vw;
 		margin: 0%;
 	}
 	[contenteditable="true"]
