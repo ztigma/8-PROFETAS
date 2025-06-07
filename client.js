@@ -50,7 +50,7 @@ Object.prototype.ID = function()
 }
 class View
 {
-    constructor(tag)
+    constructor(tag = "div")
     {
         var w = document.createElement(tag);
         w.set_attrs
