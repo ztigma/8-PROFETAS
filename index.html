@@ -3,56 +3,115 @@
     <link rel="stylesheet" href="public/css/Attributes.css">
     <link rel="stylesheet" href="public/css/AttributesPhone.css">
     <link rel="icon" href="public/img/favicon.png" type="image/x-icon">
+    <script src="client.js"></script>
+    <script>
+        var titulo = new Vista("h1");
+        titulo
+        .set_attrs
+        ({
+            "_orientation":"vertical_center"
+        })
+        .set_styles
+        ({
+            "color":"black"
+            ,
+            padding:"20px"
+        })
+        .set_childrens
+        ([
+            "8 PROFETAS"
+        ])
+        
+        var trama = new Vista("p");
+        trama
+        .set_styles
+        ({
+            padding:"20px"
+        })
+        .set_childrens
+        ([
+            "Que pasaria si al terminar tu vida, reencarnaras en el fin del mundo? o tal vez despues de el..."
+        ])
+        
+        var banner = new Vista();
+        banner
+        .set_styles
+        ({
+            "width":"100vw"
+            ,
+            "height": "150px"
+            ,    
+            "background-image": "url('public/img/portada.png')"
+            ,    
+            "background-size": "cover"
+            ,    
+            "background-position": "center"
+        })
+
+        var espaciado_momentos  = 
+            {
+                padding:"10px"
+            }
+        ;
+        document.body.set_childrens
+        ([
+            titulo
+            ,
+            trama
+            ,
+            banner
+            ,
+            new View().set_childrens
+            ([
+                "Índice"
+            ])
+            ,
+            new View().set_childrens
+            ([
+                "SEASON 1"
+            ])
+            ,
+            new View("a")
+            .set_styles
+            (
+                espaciado_momentos
+            )
+            .set_childrens
+            ([
+                "Momento 01: Las Ruinas de la Ciudad"
+            ])
+            ,
+            new View("a")
+            .set_styles
+            (
+                espaciado_momentos
+            )
+            .set_childrens
+            ([
+                "Momento 01: Las Ruinas de la Ciudad"
+            ])
+            ,
+            new View("a")
+            .set_styles
+            (
+                espaciado_momentos
+            )
+            .set_childrens
+            ([
+                "Momento 01: Las Ruinas de la Ciudad"
+            ])
+            ,
+            new View("footer")
+            .set_childrens
+            ([
+                new View("p")
+                .set_childrens
+                ([
+                    "&copy; 2025 Romel Lucero. Todos los derechos reservados."
+                ])
+            ])
+        ])
+    </script>
 </head>
 <body _orientation="vertical_center"> 
-    <h1
-        _orientation="vertical_center"    
-    >
-        8 PROFETAS
-    </h1>
-    <p
-        _orientation="vertical_center"    
-    >
-        Que pasaria si al terminar tu vida, reencarnaras en el fin del mundo? o tal vez despues de el...
-    </p>
-    
-    <div
-        style="width:100vw; height: 20vh; background-image: url('public/img/portada.png'); background-size: cover;  background-position: center;"
-    ></div>
-
-    <h2
-        _orientation="vertical_center"    
-    >
-        Índice
-    </h2>
-    <div
-        _orientation="vertical_center"    
-    > 
-        SEASON 1 
-    </div>
-
-    <a href="momentos/momento-01.html"
-        _orientation="vertical_center"
-        style="--h:100px"    
-    >
-        Momento 01: Las Ruinas de la Ciudad
-    </a>
-
-    <a href="momentos/momento-01.html"
-        _orientation="vertical_center"
-        style="--h:100px"    
-    >
-        Momento 01: Las Ruinas de la Ciudad
-    </a>
-
-    <a href="momentos/momento-01.html"
-        _orientation="vertical_center"
-        style="--h:100px"    
-    >
-        Momento 01: Las Ruinas de la Ciudad
-    </a>
-
-    <footer _orientation="horizontal_center">
-        <p>&copy; 2025 Romel Lucero. Todos los derechos reservados.</p>
-    </footer>
 </body>
