@@ -117,7 +117,3 @@ class Botonsito extends Vista
 window.addEventListener('load', function() {
 	OnStart();
 });
-function OnStart ()
-{
-
-}
