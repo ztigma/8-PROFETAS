@@ -2,7 +2,7 @@
     <title>8 PROFETAS</title>
     <link rel="stylesheet" href="public/css/Attributes.css">
     <link rel="stylesheet" href="public/css/AttributesPhone.css">
-    <link rel="icon" href="public/img/favicon.png" type="image/x-icon">
+    <link rel="icon" href="public/img/portada2.png" type="image/x-icon">
     <script src="client.js"></script>
     <script>
     function OnStart() {
@@ -17,6 +17,10 @@
             "color":"black"
             ,
             padding:"20px"
+            ,
+            "font-weight":"bold"
+            ,
+            "font-size":"30"
         })
         .set_childrens
         ([
@@ -28,25 +32,27 @@
         .set_styles
         ({
             padding:"19px"
+            ,
+            "font-size":"20"
         })
         .set_childrens
         ([
-            "Que pasaria si al terminar tu vida, reencarnaras en el fin del mundo? o tal vez despues de el..."
+            "¿Que pasaria si despertaras en el fin del mundo? o tal vez despues de el..."
         ])
         
         var banner = new View();
         banner
         .set_styles
         ({
-            "width":"100vw"
+            "width":"500px"
             ,
-            "height": "150px"
+            "height": "300px"
             ,    
             "background-image": "url('public/img/portada2.png')"
-            ,    
-            "background-size": "cover"
-            ,    
-            "background-position": "center"
+            ,
+            "background-size":"contain"
+            ,
+            "background-repeat":"no-repeat"
         })
 
         var espaciado_momentos  = 
@@ -62,12 +68,24 @@
             ,
             banner
             ,
-            new View().set_childrens
+            new View()
+            .set_styles
+            ({
+                padding:"15px"
+                ,
+                "font-size":"20px"
+            })
+	        .set_childrens
             ([
-                "Índice"
+                "ÍNDICE"
             ])
             ,
-            new View().set_childrens
+            new View()
+            .set_styles
+            ({
+                padding:"20px"
+            })
+            .set_childrens
             ([
                 "SEASON 1"
             ])
@@ -75,7 +93,7 @@
             new View("a")
             .set_attrs
             ({
-                href:"Season1/s1m1.html"
+                href:"public/Season1/s1m1.html"
             })
             .set_styles
             (
@@ -83,13 +101,13 @@
             )
             .set_childrens
             ([
-                "Momento 01: Las Ruinas de la Ciudad"
+                "Momento 1: El Despertar"
             ])
             ,
             new View("a")
             .set_attrs
             ({
-                href:"Season1/s1m2.html"
+                href:"public/Season1/s1m2.html"
             })
             .set_styles
             (
@@ -97,13 +115,13 @@
             )
             .set_childrens
             ([
-                "Momento 01: Las Ruinas de la Ciudad"
+                "Momento 2: El augurio del Zamuro"
             ])
             ,
             new View("a")
             .set_attrs
             ({
-                href:"Season1/s1m3.html"
+                href:"public/Season1/s1m3.html"
             })
             .set_styles
             (
@@ -111,10 +129,392 @@
             )
             .set_childrens
             ([
-                "Momento 01: Las Ruinas de la Ciudad"
+                "Momento 3: La sombra en el pilar"
+            ])
+            ,
+            new View("a")
+            .set_attrs
+            ({
+                href:"public/Season1/s1m4.html"
+            })
+            .set_styles
+            (
+                espaciado_momentos
+            )
+            .set_childrens
+            ([
+                "Momento 4: La Interlocución, Crystal se revela"
+            ])
+            ,
+            new View("a")
+            .set_attrs
+            ({
+                href:"public/Season1/s1m5.html"
+            })
+            .set_styles
+            (
+                espaciado_momentos
+            )
+            .set_childrens
+            ([
+                "Momento 5: La Revelación y el Ataque de Crystal"
+            ])
+            ,
+            new View("a")
+            .set_attrs
+            ({
+                href:"public/Season1/s1m6.html"
+            })
+            .set_styles
+            (
+                espaciado_momentos
+            )
+            .set_childrens
+            ([
+                "Momento 6: El Impacto Inevitable El Juicio de Crystal"
+            ])
+            ,
+            new View("a")
+            .set_attrs
+            ({
+                href:"public/Season1/s1m7.html"
+            })
+            .set_styles
+            (
+                espaciado_momentos
+            )
+            .set_childrens
+            ([
+                "Momento 7: El Silencio de la Derrota Inminente"
+            ])
+            ,
+            new View("a")
+            .set_attrs
+            ({
+                href:"public/Season1/s1m8.html"
+            })
+            .set_styles
+            (
+                espaciado_momentos
+            )
+            .set_childrens
+            ([
+                "Momento 8: El Renacer de Geo El Fénix de Cenizas"
+            ])
+            ,
+            new View("a")
+            .set_attrs
+            ({
+                href:"public/Season1/s1m9.html"
+            })
+            .set_styles
+            (
+                espaciado_momentos
+            )
+            .set_childrens
+            ([
+                "Momento 9: La Voz Interior y el Ztigma"
+            ])
+            ,
+            new View("a")
+            .set_attrs
+            ({
+                href:"public/Season1/s1m10.html"
+            })
+            .set_styles
+            (
+                espaciado_momentos
+            )
+            .set_childrens
+            ([
+                "Momento 10: El Despertar a un Mundo Desolado"
+            ])
+            ,
+            new View("a")
+            .set_attrs
+            ({
+                href:"public/Season1/s1m11.html"
+            })
+            .set_styles
+            (
+                espaciado_momentos
+            )
+            .set_childrens
+            ([
+                "Momento 11: La Guía del Ztigma y el Camino a Través del Caos "
+            ])
+            ,
+            new View("a")
+            .set_attrs
+            ({
+                href:"public/Season1/s1m12.html"
+            })
+            .set_styles
+            (
+                espaciado_momentos
+            )
+            .set_childrens
+            ([
+                "Momento 12: La Emboscada: Depredadores en las Ruinas"
+            ])
+            ,
+            new View("a")
+            .set_attrs
+            ({
+                href:"public/Season1/s1m13.html"
+            })
+            .set_styles
+            (
+                espaciado_momentos
+            )
+            .set_childrens
+            ([
+                "Momento 13: La Furia Pura, El Despertar Sangriento de Geo"
+            ])
+            ,
+            new View("a")
+            .set_attrs
+            ({
+                href:"public/Season1/s1m14.html"
+            })
+            .set_styles
+            (
+                espaciado_momentos
+            )
+            .set_childrens
+            ([
+                "Momento 14: Un Despertar Inesperado y un Nuevo Trato"
+            ])
+            ,
+            new View("a")
+            .set_attrs
+            ({
+                href:"public/Season1/s1m15.html"
+            })
+            .set_styles
+            (
+                espaciado_momentos
+            )
+            .set_childrens
+            ([
+                "Momento 15: La Explanación de Geo, Más Allá de la Bala"
+            ])
+            ,
+            new View("a")
+            .set_attrs
+            ({
+                href:"public/Season1/s1m16.html"
+            })
+            .set_styles
+            (
+                espaciado_momentos
+            )
+            .set_childrens
+            ([
+                "Momento 16: La Propuesta de la Chica: Prueba de Poder"
+            ])
+            ,
+            new View("a")
+            .set_attrs
+            ({
+                href:"public/Season1/s1m17.html"
+            })
+            .set_styles
+            (
+                espaciado_momentos
+            )
+            .set_childrens
+            ([
+                "Momento 17: La Encrucijada de Leviatán: Presiones y Acusaciones"
+            ])
+            ,
+            new View("a")
+            .set_attrs
+            ({
+                href:"public/Season1/s1m18.html"
+            })
+            .set_styles
+            (
+                espaciado_momentos
+            )
+            .set_childrens
+            ([
+                "Momento 18: La Acusación de la Traicionera: Un Hombre Cansado y Malinterpretado"
+            ])
+            ,
+            new View("a")
+            .set_attrs
+            ({
+                href:"public/Season1/s1m19.html"
+            })
+            .set_styles
+            (
+                espaciado_momentos
+            )
+            .set_childrens
+            ([
+                "Momento 19: El Testimonio de la Anciana"
+            ])
+            ,
+            new View("a")
+            .set_attrs
+            ({
+                href:"public/Season1/s1m20.html"
+            })
+            .set_styles
+            (
+                espaciado_momentos
+            )
+            .set_childrens
+            ([
+                "Momento 20: La Reacción de Geo, Un Hombre Cansado, No un Profeta"
+            ])
+            ,
+            new View("a")
+            .set_attrs
+            ({
+                href:"public/Season1/s1m21.html"
+            })
+            .set_styles
+            (
+                espaciado_momentos
+            )
+            .set_childrens
+            ([
+                "Momento 21: El Lamento de Leviatán: La Pesadilla Regresa"
+            ])
+            ,
+            new View("a")
+            .set_attrs
+            ({
+                href:"public/Season1/s1m22.html"
+            })
+            .set_styles
+            (
+                espaciado_momentos
+            )
+            .set_childrens
+            ([
+                "Momento 22: Viaje a la Cima: El Encuentro con el Profeta de la Luz"
+            ])
+            ,
+            new View("a")
+            .set_attrs
+            ({
+                href:"public/Season1/s1m23.html"
+            })
+            .set_styles
+            (
+                espaciado_momentos
+            )
+            .set_childrens
+            ([
+                "Momento 23: Revelaciones y un Nuevo Enemigo y El Despertar de la Ira Latente"
+            ])
+            ,
+            new View("a")
+            .set_attrs
+            ({
+                href:"public/Season1/s1m24.html"
+            })
+            .set_styles
+            (
+                espaciado_momentos
+            )
+            .set_childrens
+            ([
+                "Momento 24: La Onda de Choque, la Tumba del Coloso y una IA Desfasada"
+            ])
+            ,
+            new View("a")
+            .set_attrs
+            ({
+                href:"public/Season1/s1m25.html"
+            })
+            .set_styles
+            (
+                espaciado_momentos
+            )
+            .set_childrens
+            ([
+                "Momento 25: Un Amanecer sobre la Mano del Coloso y la Amarga Dulzura de la Vida Salvaje"
+            ])
+            ,
+            new View("a")
+            .set_attrs
+            ({
+                href:"public/Season1/s1m26.html"
+            })
+            .set_styles
+            (
+                espaciado_momentos
+            )
+            .set_childrens
+            ([
+                "Momento 26: El Corazón de Otrora en la Jungla"
+            ])
+            ,
+            new View("a")
+            .set_attrs
+            ({
+                href:"public/Season1/s1m27.html"
+            })
+            .set_styles
+            (
+                espaciado_momentos
+            )
+            .set_childrens
+            ([
+                "Momento 27: ¿Arañones Metálicos?"
+            ])
+            ,
+            new View("a")
+            .set_attrs
+            ({
+                href:"public/Season1/s1m28.html"
+            })
+            .set_styles
+            (
+                espaciado_momentos
+            )
+            .set_childrens
+            ([
+                "Momento 28: La Tumba de Otrora: El Pasado Revelado"
+            ])
+            ,
+            new View("a")
+            .set_attrs
+            ({
+                href:"public/Season1/s1m29.html"
+            })
+            .set_styles
+            (
+                espaciado_momentos
+            )
+            .set_childrens
+            ([
+                "Momento 29: El Gran Acertijo: El Salón de la Vida"
+            ])
+            ,
+            new View("a")
+            .set_attrs
+            ({
+                href:"public/Season1/s1m30.html"
+            })
+            .set_styles
+            (
+                espaciado_momentos
+            )
+            .set_childrens
+            ([
+                "Momento 30: La llegada de la ropa y la comida"
             ])
             ,
             new View("footer")
+            .set_styles
+            ({
+                padding:"100px"
+            })
             .set_childrens
             ([
                 new View("p")
@@ -127,5 +527,5 @@
     }
     </script>
 </head>
-<body _orientation="vertical_center"> 
+<body _orientation="vertical_center">
 </body>

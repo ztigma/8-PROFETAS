@@ -16,7 +16,7 @@
 		--z_index: 0;
 		--blur: 5vh;
 		
-		--font_size: 1vw;
+		--font_size: 16px;
 		--text_align: center;
 		
 		--y:auto;
@@ -39,7 +39,7 @@
 		--border: auto;
 		
 		--color_back: transparent;
-		--color_text: gray;
+		--color_text: #444444;
 		--color_border: transparent;
 		--color_border_hover:transparent;
 		
@@ -1069,14 +1069,6 @@
 	{
 	  color: var(--color_placeholder);
 	  opacity: 1; /* Firefox */
-	}
-	:-ms-input-placeholder 
-	{ /* Internet Explorer 10-11 */
-	 	var(--color_placeholder);
-	}
-	::-ms-input-placeholder 
-	{ /* Microsoft Edge */
-	 	var(--color_placeholder);
 	}
 	input
 	{

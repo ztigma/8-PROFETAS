@@ -88,7 +88,7 @@ class View
                 ,
                 '--border_radius_phone':'0px'
                 ,
-                '--font_size':'1vw'
+                '--font_size':'16px'
                 ,
                 '--padding':'0px'
                 ,

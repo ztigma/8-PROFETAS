@@ -37,7 +37,7 @@
 		--border: auto;
 		
 		--color_back_phone: transparent;
-		--color_text_phone: gray;
+		--color_text_phone: #444444;
 		--color_border: rgb(224, 224, 224);
 		--color_border_hover:orange;
 		
@@ -1041,14 +1041,6 @@
 	{
 	  color: var(--color_placeholder);
 	  opacity: 1; /* Firefox */
-	}
-	:-ms-input-placeholder 
-	{ /* Internet Explorer 10-11 */
-	 	var(--color_placeholder);
-	}
-	::-ms-input-placeholder 
-	{ /* Microsoft Edge */
-	 	var(--color_placeholder);
 	}
 	input
 	{
