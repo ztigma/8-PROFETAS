@@ -38,7 +38,14 @@ Element.prototype.set_childrens = function(childrens)
     (
         (n) =>
         {
-            this.append(n);       
+		if(typeof n === 'string')
+		{
+			this.innerHTML = n;
+		}
+		else
+		{
+			this.append(n);
+		}
         }
     )
     return this;
