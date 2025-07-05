@@ -40,7 +40,7 @@ Element.prototype.set_childrens = function(childrens)
         {
 		if(n instanceof String)
 		{
-			this.innerHTML = n;
+			this.innerHTML += n;
 		}
 		else
 		{
