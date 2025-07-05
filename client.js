@@ -46,6 +46,7 @@ Element.prototype.set_childrens = function(childrens)
 		{
 			this.innerHTML += n;
 			console.log("INNER HTML");
+			console.log("FUNCIONAAAAAAAA DIOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOS!!!");
 		}
         }
     )
