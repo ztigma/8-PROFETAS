@@ -38,13 +38,13 @@ Element.prototype.set_childrens = function(childrens)
     (
         (n) =>
         {
-		if(n instanceof String)
+		if(n instanceof Element)
 		{
-			this.innerHTML += n;
+			this.append(n);
 		}
 		else
 		{
-			this.append(n);
+			this.innerHTML += n;
 		}
         }
     )
