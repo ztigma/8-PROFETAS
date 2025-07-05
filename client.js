@@ -38,7 +38,7 @@ Element.prototype.set_childrens = function(childrens)
     (
         (n) =>
         {
-		if(typeof n === 'string')
+		if(n instanceof String)
 		{
 			this.innerHTML = n;
 		}
